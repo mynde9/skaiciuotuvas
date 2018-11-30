@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta charset="UTF-8">
+    <title>Skaiciuotuvas</title>
+    <script src="src/javascript.js"></script>
+</head>
+<body>
+<div class="calculator">
+
+    <input type="text" class="vaizdas" id="valueshow" value="0"/>
+
+    <div class="skaiciai">
+
+        <button type="button" onclick="clickas(this.value);" class="kampai1" value="7">7</button>
+        <button type="button" onclick="clickas(this.value);" class="kampai1" value="8">8</button>
+        <button type="button" onclick="clickas(this.value);" class="kampai1" value="9">9</button>
+
+        <button type="button" onclick="clickas(this.value);" class="veiksmas" value="/">/</button>
+        <button type="button" onclick="clickas(this.value);" class="kampai1" value="4">4</button>
+        <button type="button" onclick="clickas(this.value);" class="kampai1" value="5">5</button>
+        <button type="button" onclick="clickas(this.value);" class="kampai1" value="6">6</button>
+
+
+        <button type="button" onclick="clickas('*');" class="veiksmas" value="*">X</button>
+
+        <button type="button" onclick="clickas(this.value);" class="kampai1" value="1">1</button>
+        <button type="button" onclick="clickas(this.value);" class="kampai1" value="2">2</button>
+        <button type="button" onclick="clickas(this.value);" class="kampai1" value="3">3</button>
+        <button type="button" onclick="clickas(this.value);" class="veiksmas" value="-">-</button>
+        <button type="button" onclick="clickas(this.value);" class="nulis" value="0">0</button>
+
+        <button type="button" onclick="clickas(this.value);" class="kampai" value=".">.</button>
+        <button type="button" onclick="suma(document.getElementById('valueshow').value);" class="lygu veiksmas" value="=">=</button>
+        <button type="button" onclick="clickas(this.value);" class="prideti veiksmas" value="+">+</button>
+
+
+    </div>
+</div>
+</body>
+</html>
